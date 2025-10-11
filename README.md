@@ -11,4 +11,11 @@ A minimalist timer with a aesthetic for focused study sessions.
 
 ## Usage
 
-Open `index.html` in a browser to start using the timer.
+### Run locally
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000 in your browser.
+
