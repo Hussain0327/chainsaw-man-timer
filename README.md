@@ -1,5 +1,11 @@
 # Chainsaw Man Focus Timer
 
+<p align="center">
+  <a href="https://timer-steel-three.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Vercel-black?logo=vercel" alt="Live Demo on Vercel">
+  </a>
+</p>
+
 <table width="100%" border="0" role="presentation">
   <tr>
     <td align="left">
@@ -18,12 +24,16 @@
 ---
 
 ## Features
-- Stopwatch-style work timer
-- Lofi music toggle (play/pause)
-- Start, Stop, and Reset controls
-- Drift-free countdown (timestamp-based)
+- Stopwatch-style work timer  
+- Lofi music toggle 
+- Start, Stop, and Reset controls  
+- Drift-free countdown 
 
-## Quick Start
+## Live Demo
+[**Open on Vercel**](https://timer-steel-three.vercel.app)
+
+## Quick Start (Local)
 ```bash
 python3 -m http.server 8000
-# Open http://localhost:8000/
+# then open:
+#   http://localhost:8000/
