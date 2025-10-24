@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Pomodoro-style timer — cut through your study sessions like Chainsaw Man."
+    />
+    <link rel="icon" href="assets/favicon_denji.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chainsaw Work</title>
+  </head>
+
+  <body>
+   
+    <img
+      src="assets/background.gif"
+      id="video-background"
+      alt=""
+      aria-hidden="true"
+      decoding="async"
+      fetchpriority="low"
+    />
+
+    <main class="content">
+      <img
+        src="assets/logo.png"
+        alt="Chainsawman Lofi"
+        id="logo"
+        width="320"
+        height="96"
+        decoding="async"
+      />
+
+      <p id="description">
+        <em>Cut through your study sessions like Chainsaw Man.</em>
+      </p>
+
+      <section id="timer" aria-labelledby="timer-heading">
+        <h1 id="timer-heading">Timer</h1>
+
+        
+        <p id="countDown" role="timer" aria-live="polite" aria-atomic="true">
+          25 : 00
+        </p>
+
+        <hr />
+
+        <div id="settings">
+          <label class="setting-label" for="workDuration">
+            Duration (minutes):
+          </label>
+          <input
+            class="setting-input"
+            type="number"
+            id="workDuration"
+            value="25"
+            min="1"
+            max="120"
+            step="1"
+            inputmode="numeric"
+          />
+        </div>
+
+        <div id="controls">
+          <button id="start" type="button" aria-controls="countDown">Start</button>
+          <button id="stop" type="button" aria-controls="countDown">Stop</button>
+          <button id="reset" type="button" aria-controls="countDown">Reset</button>
+          <button id="music" type="button" aria-pressed="false">Play Music</button>
+        </div>
+      </section>
+    </main>
+
+    <audio id="audio" src="assets/music.mp3" preload="none" loop></audio>
+    <script src="script.js" defer></script>
+  </body>
+</html>
