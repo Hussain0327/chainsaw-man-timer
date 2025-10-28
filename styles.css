@@ -34,8 +34,7 @@ body {
   height: auto;
   z-index: -1;
   object-fit: cover;
-  /* Brighten the GIF - no darkening */
-  filter: brightness(0.98) contrast(1.1) saturate(1.2);
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
 
 .content {
@@ -80,7 +79,6 @@ h1 {
   width: min(90%, 500px);
   min-height: 400px;
   padding: 24px;
-  /* Glass morphism - very transparent */
   background: var(--surface-blur);
   backdrop-filter: blur(8px) brightness(1.2);
   -webkit-backdrop-filter: blur(8px) brightness(1.2);
@@ -124,7 +122,6 @@ p#countDown {
     var(--glow-primary),
     0 0 60px rgba(255, 107, 0, 0.5);
   font-variant-numeric: tabular-nums;
-  /* Add animation for prominence */
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
@@ -260,7 +257,7 @@ button:active {
   transform: translateY(0) scale(0.98);
 }
 
-/* Ensure readability on any background */
+
 @supports (backdrop-filter: blur(10px)) {
   .content > * {
     position: relative;
